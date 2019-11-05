@@ -8,7 +8,7 @@ package(
 
 genrule(
     name = "crc32c_config_h",
-    srcs = ["@com_github_cschuet_crc32c//bazel/third_party/crc32c:crc32c_config.h"],
+    srcs = ["@com_github_mgaurav_crc32c//bazel/third_party/crc32c:crc32c_config.h"],
     outs = ["include/crc32c/crc32c_config.h"],
     cmd = "cp $< $@",
 )
